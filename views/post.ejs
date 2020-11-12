@@ -1,0 +1,16 @@
+<!--  header     -->
+<%- include('partials/header'); -%>
+<%if(displayObject.title!="NULL"){ %>
+    <h1><%=displayObject.title %></h1>
+    <p><%=displayObject.content %></p>
+
+<% } else{ %>
+    <h1>Sorry! Post Not Found</h1>
+    <form action="/" method="get">
+    <button type ="submit" class="btn btn-danger">Go to Home</button>
+    </form>
+    <% } %>
+
+
+<!--  footer     -->
+<%- include('partials/footer'); -%>
